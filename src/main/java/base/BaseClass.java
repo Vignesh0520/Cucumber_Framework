@@ -24,6 +24,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+// Utility class for browser setup, teardown, and reusable Selenium operations.
+
 public class BaseClass {
 
 	private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
