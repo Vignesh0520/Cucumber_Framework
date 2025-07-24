@@ -1,3 +1,4 @@
+@regression
 Feature: Login functionality with multiple input types
 
   Scenario: Login without using datatable
