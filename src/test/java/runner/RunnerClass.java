@@ -13,14 +13,16 @@ import Reporting.JVM_Report;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "C:\\Users\\vigne\\eclipse-workspace\\Cucumber_Framework\\src\\test\\resources\\features", 
+		plugin = {	
+					"pretty",
+					"html:C:\\Users\\vigne\\eclipse-workspace\\Cucumber_Framework\\target\\cucumber-html-report\\cucumber-reports.html",
+					"json:C:\\Users\\vigne\\eclipse-workspace\\Cucumber_Framework\\target\\cucumber-report\\cucumber.json",
+					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		glue = "stepDefinitions", 
 		dryRun = false, 
 		monochrome = true, 
-		tags = "@regression", 
-		plugin = {	
-				"pretty",
-				"html:C:\\Users\\vigne\\eclipse-workspace\\Cucumber_Framework\\target\\cucumber-html-report\\cucumber-reports.html",
-				"json:C:\\Users\\vigne\\eclipse-workspace\\Cucumber_Framework\\target\\cucumber-report\\cucumber.json" })
+		tags = "@regression"
+		)
 public class RunnerClass {
 
 	@AfterClass
